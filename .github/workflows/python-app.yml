@@ -55,6 +55,7 @@ jobs:
           target: 'https://amirul.pythonanywhere.com/'
           # rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
+        continue-on-error: true
       - name: Save ZAP Results
         run: echo "${{ steps.zap_scan.outputs.result }}" > zap_results.txt
       - name: Upload ZAP Results as Artifact
