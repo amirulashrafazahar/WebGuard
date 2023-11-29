@@ -56,6 +56,12 @@ jobs:
           cmd_options: '-a'
       - name: Save ZAP Results
         run: echo "${{ steps.zap_scan.outputs.result }}" > zap_results.txt
+      - name: Upload ZAP Results as Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: zap-results
+          path: zap_results.txt
+        
 
   check_zap_results:
     runs-on: ubuntu-latest
