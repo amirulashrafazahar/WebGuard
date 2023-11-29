@@ -51,7 +51,7 @@ jobs:
         uses: zaproxy/action-baseline@v0.6.1
         with:
           docker_name: 'owasp/zap2docker-stable'
-          target: 'http://127.0.0.1:5000'
+          target: 'https://amirul.pythonanywhere.com/'
           # rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
       - name: Save ZAP Results

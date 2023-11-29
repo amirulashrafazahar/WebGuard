@@ -13,3 +13,4 @@ ID    Name    Enabled    Risk    Description
 1000  SQL Injection - MySQL    true    High    Looks for SQL Injection vulnerabilities specific to MySQL databases
 1001  SQL Injection - Oracle   true    High    Looks for SQL Injection vulnerabilities specific to Oracle databases
 
+i use https://www.pythonanywhere.com/ to make url public for github to scan
