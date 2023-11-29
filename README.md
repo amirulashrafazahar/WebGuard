@@ -20,7 +20,7 @@ ID    Name    Enabled    Risk    Description
 1001  SQL Injection - Oracle   true    High    Looks for SQL Injection vulnerabilities specific to Oracle database
 
 # What has been achieved here : 
-# 1. Git repository (public or private, your choice) for the WebGuard web application.
+# 1. Git repository for the WebGuard web application.
 # 2. Simple Flask web application running in Github action pipeline
 # 3. Automated unit test running in the pipeline
 # 4. Automated security scanning with OWASP ZAP
